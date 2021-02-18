@@ -1,0 +1,13 @@
+- hosts: localhost
+  tasks:
+  - ec2:
+      aws_access_key: "KFHDFSD80GYWRGRJKL"
+      aws_secret_key: "LKCGKFGhgisvnignvgjsO"
+      count: 3
+      group_id: security_group
+      image: "ami-08e0ca9924195beba"
+      key_name: your_key
+      region: "ap-south-1"
+      vpc_subnet_id: subnet
+      instance_type: t2.medium
+      assign_public_ip: yes
